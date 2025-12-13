@@ -65,33 +65,30 @@ Y= A⊕B
 **PROGRAM**
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
+
+
 ```
-module Gate_1 (
-    input  wire a,     // Input A
-    input  wire b,     // Input B
-    output wire and_out,
-    output wire or_out,
-    output wire not_out,   // only on A
-    output wire nand_out,
-    output wire nor_out,
-    output wire xor_out,
-    output wire xnor_out
-);
+assign and_out  = a & b;   // AND gate
+assign or_out   = a | b;   // OR gate
+assign not_out  = ~a;      
+// NOT gate (unary)
 
-    assign and_out  = a & b;      // AND gate
-    assign or_out   = a | b;      // OR gate
-    assign not_out  = ~a;         // NOT gate (on input A)
-    assign nand_out = ~(a & b);   // NAND gate
-    assign nor_out  = ~(a | b);   // NOR gate
-    assign xor_out  = a ^ b;      // XOR gate
-    assign xnor_out = ~(a ^ b);   // XNOR gate
 
-endmodule
+assign nand_out = ~(a & b);// NAND gate
+assign nor_out  = ~(a | b);// NOR gate
+assign xor_out  = a ^ b;   // XOR gate
+assign xnor_out = ~(a ^ b);// XNOR gate
+
+
 ```
  Developed by:TAZEEM R RegisterNumber:25012330 
  
 **Logic symbol & Truthtable**
-![Uploading image.png…]()
+<img width="880" height="808" alt="Screenshot 2025-12-13 185720" src="https://github.com/user-attachments/assets/8e4efb2c-2478-4c49-896f-19b257a4ad55" />
+
+
+<img width="1191" height="683" alt="Screenshot 2025-12-13 190415" src="https://github.com/user-attachments/assets/fc2b9b3a-af66-4478-b397-1b0686132e16" />
+
 
 **RTL realization Output:** 
 <img width="910" height="546" alt="image" src="https://github.com/user-attachments/assets/1dd518e8-d9e7-41b3-984b-1e69a8938e7f" />
