@@ -81,13 +81,15 @@ assign xnor_out = ~(a ^ b);// XNOR gate
 
 
 ```
- Developed by:TAZEEM R RegisterNumber:25012330 
+ 
+ Developed by:TAZEEM R
+ 
+ RegisterNumber:25012330 
  
 **Logic symbol & Truthtable**
 <img width="880" height="808" alt="Screenshot 2025-12-13 185720" src="https://github.com/user-attachments/assets/8e4efb2c-2478-4c49-896f-19b257a4ad55" />
 
 
-<img width="1191" height="683" alt="Screenshot 2025-12-13 190415" src="https://github.com/user-attachments/assets/fc2b9b3a-af66-4478-b397-1b0686132e16" />
 
 
 **RTL realization Output:** 
